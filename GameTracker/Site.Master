@@ -1,0 +1,55 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="GameTracker.Site" %>
+
+<%@ Register Src="~/User_Controls/Navbar.ascx" TagName="Navbar" TagPrefix="bs3" %>
+
+<%--
+File Name: Site.Master
+Author Name: Mansi Patel(200303640) & Shweta Chavda(200326347)
+Website Name: http://aspnet-project1.azurewebsites.net/Default.aspx
+Description: This is the Master Page for the website, which contains all the User_controls and Front-end dependances like CSS and JavaScript and the footer for the website.
+ @date: June 8, 2016
+ @version: 0.0.1  --%>
+
+<!DOCTYPE html>
+<html lang="en">
+<head runat="server">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <!-- CSS Section -->
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="Content/bootstrap-theme.min.css" rel="stylesheet" />
+    <link href="Content/font-awesome.min.css" rel="stylesheet" />
+    <link href="Content/app.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <bs3:Navbar runat="server" ID="PrimaryNav"></bs3:Navbar>
+    <div>
+        <asp:ContentPlaceHolder ID="MainContent" runat="server">    
+        </asp:ContentPlaceHolder>
+    </div>
+      
+    </form>
+    <!-- JavaScript -->
+    <script src="Scripts/jquery-2.2.3.min.js"></script>
+    <script src="Scripts/bootstrap.min.js"></script>
+    <script src="Scripts/app.js"></script>
+    <br />  <br />  <br />
+    <div class="navbar">
+        <ul class="blog-nav">
+            <div class="navbar-text pull-left">
+                 <a href="Default.aspx" class=""><i class="fa fa-home fa-lg"></i> Back to Home</a>
+            </div>
+            <div class="navbar-text pull-right">
+                <a href="https://github.com/mansipatel108"> Develop by Mansi Patel & Shweta Chavda
+                    <i class="fa fa-github fa-2x"></i></a>
+                </div>
+        </ul>
+    </div>
+</body>
+</html>
+
