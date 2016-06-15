@@ -32,7 +32,7 @@
                         <asp:BoundField DataField="Team1Score" HeaderText="Team1 Score" Visible="true" SortExpression="Team1Score" />
                         <asp:BoundField DataField="Team2Score" HeaderText="Team2 Score" Visible="true" SortExpression="Team2Score" />
                         <asp:BoundField DataField="Weeks" HeaderText="Week" Visible="true" SortExpression="Weeks"
-                            DataFormatString="{0:MMM dd, yyyy}" />
+                            DataFormatString="{0:yyyy/MM/dd}" />
                         <asp:BoundField DataField="GameWinner" HeaderText="GameWinner" Visible="true" SortExpression="GameWinner" />
                         <asp:HyperLinkField HeaderText="Edit" Text="<i class='fa fa-pencil-square-o fa-lg'></i> Edit" 
                             NavigateUrl="~/AddGame.aspx" ControlStyle-CssClass="btn btn-primary btn-sm" runat="server"

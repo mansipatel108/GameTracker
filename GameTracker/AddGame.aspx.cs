@@ -96,6 +96,7 @@ namespace GameTracker
                 // Redirect back to the updated students page
                 Response.Redirect("~/GameDetails.aspx");
 
+
             }
         }
     }
