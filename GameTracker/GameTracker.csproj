@@ -77,14 +77,25 @@
   <ItemGroup>
     <Content Include="About.aspx" />
     <Content Include="AddGame.aspx" />
+    <Content Include="Assets\Images\baseball.gif" />
+    <Content Include="Assets\Images\baseball1.jpg" />
+    <Content Include="Assets\Images\basket.jpg" />
+    <Content Include="Assets\Images\basketball.gif" />
+    <Content Include="Assets\Images\golf.gif" />
+    <Content Include="Assets\Images\hockey.gif" />
+    <Content Include="Assets\Images\hockey1.jpg" />
+    <Content Include="Assets\Images\soccer.gif" />
+    <Content Include="Assets\Images\soccer1.jpg" />
+    <Content Include="Assets\Images\what.jpg" />
+    <Content Include="Assets\Images\who1.png" />
     <Content Include="Contact.aspx" />
     <Content Include="Content\app.css" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
-    <Content Include="css\font-awesome.css" />
-    <Content Include="css\font-awesome.min.css" />
+    <Content Include="Content\font-awesome.css" />
+    <Content Include="Content\font-awesome.min.css" />
     <Content Include="Default.aspx" />
     <Content Include="fonts\fontawesome-webfont.svg" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
@@ -244,6 +255,9 @@
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="css\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

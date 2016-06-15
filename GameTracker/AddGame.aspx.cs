@@ -5,7 +5,7 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 // using statements required for EF DB access
-//using GameTracker.Model;
+using GameTracker.Model;
 //using System.Web.ModelBinding;
 namespace GameTracker
 {
