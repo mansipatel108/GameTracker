@@ -94,7 +94,7 @@ namespace GameTracker
                 db.SaveChanges();
 
                 // Redirect back to the updated students page
-                Response.Redirect("~/Login.aspx");
+                Response.Redirect("~/GameDetails.aspx");
 
             }
         }
