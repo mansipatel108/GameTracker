@@ -84,7 +84,7 @@ Description: From this page user can create a tracker for their favourite game's
                                 <strong>BaseBall</strong>
                             </h4>
                             <div>
-                                <a class="btn btn-info btn-group-lg" id="BaseBallButton" href="Login.aspx"><i class="fa fa-hand-pointer-o"></i>View</a>
+                                <a class="btn btn-info btn-group-lg" id="BaseBallButton" href="GameDetails.aspx"><i class="fa fa-hand-pointer-o"></i>View</a>
                             </div>
                         </div>
                     </div>
@@ -97,7 +97,7 @@ Description: From this page user can create a tracker for their favourite game's
                                 <strong>BasketBall </strong>
                             </h4>
                             <div>
-                                <a class="btn btn-info btn-group-lg" id="BasketBallButton" href="Login.aspx"><i class="fa fa-hand-pointer-o"></i>View</a>
+                                <a class="btn btn-info btn-group-lg" id="BasketBallButton" href="GameDetails.aspx"><i class="fa fa-hand-pointer-o"></i>View</a>
                             </div>
                         </div>
                     </div>
@@ -110,7 +110,7 @@ Description: From this page user can create a tracker for their favourite game's
                                 <strong>Hockey</strong>
                             </h4>
                             <div>
-                                <a class="btn btn-info btn-group-lg" id="HockeyButton" href="Login.aspx"><i class="fa fa-hand-pointer-o"></i>View</a>
+                                <a class="btn btn-info btn-group-lg" id="HockeyButton" href="GameDetails.aspx"><i class="fa fa-hand-pointer-o"></i>View</a>
                             </div>
                         </div>
                     </div>
@@ -124,7 +124,7 @@ Description: From this page user can create a tracker for their favourite game's
                                 <strong>Soccer</strong>
                             </h4>
                             <div>
-                                <a class="btn btn-info btn-group-lg" id="SoccerButton" href="Login.aspx"><i class="fa fa-hand-pointer-o"></i>View</a>
+                                <a class="btn btn-info btn-group-lg" id="SoccerButton" href="GameDetails.aspx"><i class="fa fa-hand-pointer-o"></i>View</a>
                             </div>
                             <br />
                             <asp:GridView runat="server" ID="WeeklyGame"></asp:GridView>
