@@ -1,10 +1,10 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="AddGame.aspx.cs" Inherits="GameTracker.AddGame" %>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
-div class="container">
+
         <div class="row">
             <div class="col-md-offset-3 col-md-6">
                 <h1>Registration</h1>
-                <h5>All Fields are Required</h5>
+                <h5>All Fields are Required*</h5>
                 <br />
                 <div class="form-group">
                     <label class="control-label" for="GameTypeTextBox">GameName: </label>

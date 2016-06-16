@@ -4,9 +4,9 @@
     <div class="container">
         <div class="row">
             <div class="col-md-offset-2 col-md-8">
-                <h1>Game List</h1>
+                <h1>Games List</h1>
                 <a href="AddGame.aspx" class="btn btn-success btn-sm"><i class="fa fa-plus"></i>Add Game</a>
-
+                <br />
                 <div>
                     <label for="PageSizeDropDownList">Records per Page: </label>
                     <asp:DropDownList ID="PageSizeDropDownList" runat="server"
@@ -18,12 +18,12 @@
                         <asp:ListItem Text="All" Value="10000" />
                     </asp:DropDownList>
                 </div>
-
-                <asp:GridView runat="server" CssClass="table table-inverse"
+                <br /> 
+                <asp:GridView runat="server" CssClass="table table-hover" BackColor="White"
                     ID="GamesGridView" AutoGenerateColumns="false" DataKeyNames="gameID"
                     AllowPaging="true" PageSize="3"
                     OnPageIndexChanging="GamesGridView_PageIndexChanging" AllowSorting="true"
-                    OnSorting="GamesGridView_Sorting" OnRowDataBound="GamesGridView_RowDataBound" 
+                    OnSorting="GamesGridView_Sorting" OnRowDataBound="GamesGridView_RowDataBound"
                     PagerStyle-CssClass="pagination-ys">
                     <Columns>
                         <asp:BoundField DataField="GameType" HeaderText="Game Name" Visible="true" SortExpression="GameType" />
@@ -34,7 +34,7 @@
                         <asp:BoundField DataField="Weeks" HeaderText="Week" Visible="true" SortExpression="Weeks"
                             DataFormatString="{0:yyyy/MM/dd}" />
                         <asp:BoundField DataField="GameWinner" HeaderText="GameWinner" Visible="true" SortExpression="GameWinner" />
-                        <asp:HyperLinkField HeaderText="Edit" Text="<i class='fa fa-pencil-square-o fa-lg'></i> Edit" 
+                        <asp:HyperLinkField HeaderText="Edit" Text="<i class='fa fa-pencil-square-o fa-lg'></i> Edit"
                             NavigateUrl="~/AddGame.aspx" ControlStyle-CssClass="btn btn-primary btn-sm" runat="server"
                             DataNavigateUrlFields="gameID" DataNavigateUrlFormatString="AddGame.aspx?gameID={0}" />
                     </Columns>
