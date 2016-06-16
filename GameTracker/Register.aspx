@@ -2,10 +2,13 @@
 <%--
 File Name: Register.aspx
 Author Name: Mansi Patel(200303640) & Shweta Chavda(200326347)
-Website Name: http://aspnet-project1.azurewebsites.net/Default.aspx
+Website Name: http://gametrackerproject.azurewebsites.net/Default.aspx
 Description: In order to get log in User must get registered on this page.
  @date: June 8, 2016
- @version: 0.0.1  --%>
+ @version: 0.0.1
+ @date: June 15, 2016
+ @version: 0.0.2
+      --%>
 
 
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">

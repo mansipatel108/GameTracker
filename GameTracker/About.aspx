@@ -1,11 +1,14 @@
 ﻿<%@ Page Title="About" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="About.aspx.cs" Inherits="GameTracker.About" %>
+
 <%--
 File Name: About.aspx
 Author Name: Mansi Patel(200303640) & Shweta Chavda(200326347)
-Website Name: http://aspnet-project1.azurewebsites.net/Default.aspx
+Website Name: http://gametrackerproject.azurewebsites.net/Default.aspx
 Description:  This page contains the information about the authors and the website itself with images
  @date: June 8, 2016
- @version: 0.0.1  --%>
+ @version: 0.0.1
+ @date: June 15, 2016
+ @version: 0.0.2  --%>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
 
@@ -22,7 +25,8 @@ Description:  This page contains the information about the authors and the websi
 
             <img src="Assets/Images/what.jpg" width="200" height="200" class="img-circle" style="float: right" />
             <h4>&nbsp;&nbsp;&nbsp;  What Is Game Tracker?</h4>
-            <p id="who">&nbsp;&nbsp;&nbsp;GameTracker is a place for you to keep track of your games. 
+            <p id="who">
+                &nbsp;&nbsp;&nbsp;GameTracker is a place for you to keep track of your games. 
                 Once you register for an account, you can start adding games from our database and it will display the teams playing according to game selected.
                 You can view the status of teams every week and can keep track of your games on a weekly basis,
                 you can also view the statistics for your teams in a pie chart form. You can also edit or delete game
@@ -30,5 +34,5 @@ Description:  This page contains the information about the authors and the websi
             </p>
         </div>
     </div>
-    
+
 </asp:Content>

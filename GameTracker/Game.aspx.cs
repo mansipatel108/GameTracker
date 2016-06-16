@@ -13,16 +13,16 @@ namespace GameTracker
         {
             if (!IsPostBack)
             {
-                // Get the student data
+                // Get the game data
                 this.GetGames();
             }
         }
         /**
                * <summary>
-               * This method gets the student data from the DB
+               * This method gets the game data from the DB
                * </summary>
                * 
-               * @method GetStudents
+               * @method GetGames
                * @returns {void}
                */
         protected void GetGames()
@@ -30,7 +30,7 @@ namespace GameTracker
             // connect to EF
             using (DefaultConnection db = new DefaultConnection())
             {
-                // query the Students Table using EF and LINQ
+                // query the Games Table using EF and LINQ
              //   var Games = (from allGames in db.Game_info
                   //           select allGames);
 

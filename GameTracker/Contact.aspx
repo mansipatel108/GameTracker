@@ -1,11 +1,15 @@
 ﻿<%@ Page Title="Contact Page" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Contact.aspx.cs" Inherits="GameTracker.Contact" %>
+
 <%--
 File Name: Contact.aspx
 Author Name: Mansi Patel(200303640) & Shweta Chavda(200326347)
-Website Name: http://aspnet-project1.azurewebsites.net/Default.aspx
+Website Name: http://gametrackerproject.azurewebsites.net/Default.aspx
 Description:  This page contains the contact form for the user. 
  @date: June 8, 2016
- @version: 0.0.1 --%>
+ @version: 0.0.1
+ @date: June 15, 2016
+ @version: 0.0.2 
+--%>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
     <div class="container">
@@ -41,7 +45,7 @@ Description:  This page contains the contact form for the user.
                 <asp:RequiredFieldValidator Display="Dynamic" CssClass="alert-danger" ID="RequiredFieldValidator5" runat="server" ErrorMessage="Your Message is required" ControlToValidate="MessageTextBox"></asp:RequiredFieldValidator>
             </div>
             <div class="text-right">
-                <a class="btn btn-warning btn-lg" id="CancelButton" href="Default.aspx"><i class="fa fa-arrow-circle-left"></i> Cancel</a>
+                <a class="btn btn-warning btn-lg" id="CancelButton" href="Default.aspx"><i class="fa fa-arrow-circle-left"></i>Cancel</a>
                 <asp:Button runat="server" CssClass="btn btn-primary btn-lg" ID="SendButton" Text="Send" CausesValidation="true" OnClick="SendButton_Click" />
             </div>
         </div>

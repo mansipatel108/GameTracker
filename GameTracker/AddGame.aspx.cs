@@ -26,12 +26,12 @@ namespace GameTracker
             //connect to EF to DB
             using (DefaultConnection db = new DefaultConnection())
             {
-                // populate a student object instance with the StudentID from the URL Parameter
+                // populate a game object instance with the GameID from the URL Parameter
                 Game_info updatedGame = (from Game_info in db.Game_info
                                          where Game_info.gameID == gameID
                                          select Game_info).FirstOrDefault();
 
-                // map the student properties to the form controls
+                // map the game properties to the form controls
                 if (updatedGame != null)
                 {
                     GameTextBox.Text = updatedGame.gameType;
@@ -56,24 +56,24 @@ namespace GameTracker
             // Use EF to connect to the server
             using (DefaultConnection db = new DefaultConnection())
             {
-                // use the Student model to create a new student object and
+                // use the Game model to create a new game object and
                 // save a new record
                 Game_info newGame = new Game_info();
 
                 int gameID = 0;
 
-                if (Request.QueryString.Count > 0) // our URL has a StudentID in it
+                if (Request.QueryString.Count > 0) // our URL has a GameID in it
                 {
                     // get the id from the URL
                     gameID = Convert.ToInt32(Request.QueryString["gameID"]);
 
-                    // get the current student from EF DB
+                    // get the current game from EF DB
                     newGame = (from Game_info in db.Game_info
                                where Game_info.gameID == gameID
                                select Game_info).FirstOrDefault();
                 }
 
-                // add form data to the new student record
+                // add form data to the new game record
                 newGame.gameType = GameTextBox.Text;
                 newGame.team1Name = TeamName1TextBox.Text;
                 newGame.team2Name = TeamName2TextBox.Text;
@@ -82,7 +82,7 @@ namespace GameTracker
                 newGame.weeks = Convert.ToDateTime(WeekTextBox.Text);
                 newGame.gameWinner = WinnerTextBox.Text;
 
-                // use LINQ to ADO.NET to add / insert new student into the database
+                // use LINQ to ADO.NET to add / insert new game into the database
 
                 if (gameID == 0)
                 {
@@ -93,10 +93,8 @@ namespace GameTracker
                 // save our changes - also updates and inserts
                 db.SaveChanges();
 
-                // Redirect back to the updated students page
+                // Redirect back to the updated games page
                 Response.Redirect("~/GameDetails.aspx");
-
-
             }
         }
     }

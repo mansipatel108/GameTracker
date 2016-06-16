@@ -16,21 +16,21 @@ namespace GameTracker
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            // if loading the page for the first time, populate the student grid
+            // if loading the page for the first time, populate the game grid
             if (!IsPostBack)
             {
                 Session["SortColumn"] = "gameID"; // default sort column
                 Session["SortDirection"] = "ASC";
-                // Get the student data
+                // Get the game data
                 this.GetGames();
             }
         }
         /**
                * <summary>
-               * This method gets the student data from the DB
+               * This method gets the game data from the DB
                * </summary>
                * 
-               * @method GetStudents
+               * @method GetGames
                * @returns {void}
                */
         protected void GetGames()
@@ -40,7 +40,7 @@ namespace GameTracker
             {
                 string SortString = Session["SortColumn"].ToString() + " " + Session["SortDirection"].ToString();
 
-                // query the Students Table using EF and LINQ
+                // query the Games Table using EF and LINQ
                 var Games = (from allGames in db.Game_info
                              select allGames);
 
@@ -55,7 +55,7 @@ namespace GameTracker
          * This event handler allows pagination to occur for the Students page
          * </summary>
          * 
-         * @method StudentsGridView_PageIndexChanging
+         * @method GamessGridView_PageIndexChanging
          * @param {object} sender
          * @param {GridViewPageEventArgs} e
          * @returns {void}

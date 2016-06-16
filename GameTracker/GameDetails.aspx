@@ -1,4 +1,17 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="GameDetails.aspx.cs" Inherits="GameTracker.GameDetails" %>
+
+<%--
+File Name: GameDetails.aspx
+Author Name: Mansi Patel(200303640) & Shweta Chavda(200326347)
+Website Name: http://gametrackerproject.azurewebsites.net/Default.aspx
+Description: This page contains the detailed information about the game in GridView
+ @date: June 8, 2016
+ @version: 0.0.1 
+ @date: June 15, 2016
+ @version: 0.0.2  
+--%>
+
+
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
 
     <div class="container">
@@ -18,7 +31,7 @@
                         <asp:ListItem Text="All" Value="10000" />
                     </asp:DropDownList>
                 </div>
-                <br /> 
+                <br />
                 <asp:GridView runat="server" CssClass="table table-hover" BackColor="White"
                     ID="GamesGridView" AutoGenerateColumns="false" DataKeyNames="gameID"
                     AllowPaging="true" PageSize="3"
@@ -42,6 +55,4 @@
             </div>
         </div>
     </div>
-
-
 </asp:Content>

@@ -3,10 +3,13 @@
 <%--
 File Name: Game.aspx
 Author Name: Mansi Patel(200303640) & Shweta Chavda(200326347)
-Website Name: http://aspnet-project1.azurewebsites.net/Default.aspx
+Website Name: http://gametrackerproject.azurewebsites.net/Default.aspx
 Description: From this page user can create a tracker for their favourite game's team
  @date: June 8, 2016
- @version: 0.0.1  --%>
+ @version: 0.0.1 
+ @date: June 15, 2016
+ @version: 0.0.2  
+--%>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
     <section id="services" class="services">
@@ -135,9 +138,7 @@ Description: From this page user can create a tracker for their favourite game's
                 <!-- /.row (nested) -->
             </div>
             <!-- /.col-lg-10 -->
-        </div>
-        <!-- /.row -->
-        <!-- /.container -->
+        </div><!-- /.container -->
     </section>
     <br />
     <br />

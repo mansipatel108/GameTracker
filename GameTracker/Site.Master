@@ -5,10 +5,13 @@
 <%--
 File Name: Site.Master
 Author Name: Mansi Patel(200303640) & Shweta Chavda(200326347)
-Website Name: http://aspnet-project1.azurewebsites.net/Default.aspx
+Website Name: http://gametrackerproject.azurewebsites.net/Default.aspx
 Description: This is the Master Page for the website, which contains all the User_controls and Front-end dependances like CSS and JavaScript and the footer for the website.
  @date: June 8, 2016
- @version: 0.0.1  --%>
+ @version: 0.0.1
+ @date: June 15, 2016
+ @version: 0.0.2   
+      --%>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -46,7 +49,7 @@ Description: This is the Master Page for the website, which contains all the Use
                 <li id="about" runat="server"><a href="About.aspx"><i class="fa fa-info-circle"></i> About Us</a></li>
                  <li id="game" runat="server"><a href="Game.aspx"><i class="fa fa-puzzle-piece"></i> Game Tracker</a></li>
                 <li id="login" runat="server"><a href="Login.aspx"><i class="fa fa-sign-in fa-lg"></i> Login</a></li>
-                <li id="logout" runat="server"><a href="Default.aspx"><i class="fa fa-sign-out fa-lg"></i> LogOut</a></li>
+                <li id="logout" runat="server"><a href="Default.aspx"><i class="fa fa-sign-out fa-lg"></i> Logout</a></li>
                 <li id="contact" runat="server"><a href="Contact.aspx"><i class="fa fa-phone fa-lg"></i> Contact</a></li>
                 
             </ul>

@@ -28,12 +28,12 @@ namespace GameTracker
             //connect to EF to DB
             using (DefaultConnection db = new DefaultConnection())
             {
-                // populate a student object instance with the StudentID from the URL Parameter
+                // populate a user object instance with the userID from the URL Parameter
                 User_info updatedUser = (from User_info in db.User_info
                                          where User_info.userID == userID
                                          select User_info).FirstOrDefault();
 
-                // map the student properties to the form controls
+                // map the user properties to the form controls
                 if (updatedUser != null)
                 {
                     EmailTextBox.Text = updatedUser.email;
@@ -55,41 +55,39 @@ namespace GameTracker
             // Use EF to connect to the server
             using (DefaultConnection db = new DefaultConnection())
             {
-                // use the Student model to create a new student object and
+                // use the User_info model to create a new user object and
                 // save a new record
                 User_info newUser = new User_info();
 
                 int userID = 0;
 
-                if (Request.QueryString.Count > 0) // our URL has a StudentID in it
+                if (Request.QueryString.Count > 0) // our URL has a userID in it
                 {
                     // get the id from the URL
                     userID = Convert.ToInt32(Request.QueryString["userID"]);
 
-                    // get the current student from EF DB
+                    // get the current user from EF DB
                     newUser = (from User_info in db.User_info
                                where User_info.userID == userID
                                select User_info).FirstOrDefault();
                 }
 
-                // add form data to the new student record
+                // add form data to the new user record
                 newUser.email = EmailTextBox.Text;
                 newUser.userName = UserNameTextBox.Text;
                 newUser.password = PasswordTextBox.Text;
                 newUser.displayName = DisplayNameTextBox.Text;
 
-                // use LINQ to ADO.NET to add / insert new student into the database
+                // use LINQ to ADO.NET to add / insert new user into the database
 
                 if (userID == 0)
                 {
                     db.User_info.Add(newUser);
                 }
-
-
                 // save our changes - also updates and inserts
                 db.SaveChanges();
 
-                // Redirect back to the updated students page
+                // Redirect back to the updated users page
                 Response.Redirect("~/Login.aspx");
             }
 

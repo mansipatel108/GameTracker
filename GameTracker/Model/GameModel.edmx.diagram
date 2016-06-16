@@ -5,10 +5,10 @@
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
       <Diagram DiagramId="d56751a48ee242c6b6e049c70cad5193" Name="Diagram1">
-        <EntityTypeShape EntityType="GameModel.Game_info" Width="1.5" PointX="4.625" PointY="1.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GameModel.Game_info" Width="1.5" PointX="5.5" PointY="0.75" IsExpanded="true" />
         <EntityTypeShape EntityType="GameModel.User_info" Width="1.5" PointX="0.75" PointY="0.875" IsExpanded="true" />
         <EntityTypeShape EntityType="GameModel.User" Width="1.5" PointX="3" PointY="1.125" IsExpanded="true" />
-        <EntityTypeShape EntityType="GameModel.Game" Width="1.5" PointX="6.125" PointY="0.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="GameModel.Game" Width="1.5" PointX="7.75" PointY="0.75" IsExpanded="true" />
         <AssociationConnector Association="GameModel.FK__Users__userID__57A801BA" ManuallyRouted="false" />
       </Diagram>
     </edmx:Diagrams>
